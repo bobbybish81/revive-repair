@@ -1,0 +1,152 @@
+.nav-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f47323;
+  font-size: 0.7rem;
+  font-weight: 350;
+  height: 2.5em;
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 5em;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.revive-logo {
+  height: 4em;
+  margin-left: 1em;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.mobile-menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #cecdcd;
+  overflow-x: hidden;
+  transition: 0.35s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-closebtn,
+.menu-openbtn {
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #104ca0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  height: 70%;
+  display: grid;
+}
+
+.nav-links li {
+  color: #104ca0;
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav-links li:hover {
+  color: #f47323;
+  cursor: pointer;
+}
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 980px) {
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .nav-contacts {
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+
+  .navbar {
+    height: 7em;
+    border-bottom: 1px solid #cecdcd;
+  }
+
+  .revive-logo {
+    height: 6em;
+    margin-left: 3em;
+  }
+
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3em;
+  }
+
+  .contact-details p {
+    margin: 0 4em 0 0.25em;
+    letter-spacing: 0.75px;
+  }
+
+  .contact-details .contact-logo:hover,
+  .contact-details p:hover {
+    cursor: pointer;
+  }
+
+  .contact-logo {
+    font-size: 1.5em;
+  }
+
+  .address {
+    margin-left: 3em;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 3em;
+  }
+
+  .nav-links li {
+    margin: 0 2rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+}
+
+@media only screen and (min-width: 1150px) {
+
+  .nav-links li {
+    margin: 0 2.5rem;
+  }
+
+}
