@@ -1,3 +1,7 @@
+nav {
+  min-width: 450px;
+}
+
 .nav-contacts {
   display: flex;
   justify-content: center;
