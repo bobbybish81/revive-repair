@@ -25,10 +25,10 @@ body {
   color: #fff;
 }
 
-@media only screen and (min-width: 1368px) {
+/* @media only screen and (min-width: 1368px) {
   #root {
     max-width: 1800px;
-    /* min-width: 375px; */
+    min-width: 375px;
     margin: 0 auto;
   }
-}
+} */
