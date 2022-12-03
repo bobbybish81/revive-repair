@@ -1,5 +1,5 @@
 nav {
-  min-width: 350px;
+  min-width: 375px;
 }
 
 .nav-contacts {
@@ -7,7 +7,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #f47323;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 350;
   height: 2.5em;
   text-align: center;
