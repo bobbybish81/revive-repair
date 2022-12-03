@@ -13,7 +13,6 @@
   background-color: rgba(94, 79, 63, 0.8);
   background-image: url('.././images/home_kitchen.jpeg');
   background-size: cover;
-  /* min-width: 375px; */
 }
 
 .main-home-content {
@@ -98,8 +97,9 @@
 .services-text {
   color: #626466;
   text-align: center;
-  line-height: 1.25em;
-  margin: 1.5em 0;
+  line-height: 1.5em;
+  margin: 1rem 0;
+  font-size: 1.25rem;
 }
 
 .quote {
@@ -108,9 +108,10 @@
 
 /* repairs */
 .repairs {
+  width: 100%;
   background-color: #104ca0;
   text-align: center;
-  padding: 1em 3em 2em;
+  padding: 2rem;
 }
 
 .repair-heading {
@@ -125,20 +126,20 @@
 /* certificates */
 .certificates {
   width: 100%;
-  height: 8em;
   background-color: #fff;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
 }
 
 .certificate-image {
-  height: 5em;
-  width: 10em;
+  height: 6em;
+  width: 12em;
 }
 
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 980px) {
 
   .main-home-intro-mobile {
     display: none;
