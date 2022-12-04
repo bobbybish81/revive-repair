@@ -1,9 +1,9 @@
-import React from 'react'
+import '.././styles/Footer.css';
 
-function Footer() {
+function Footer () {
   return (
-    <div>Footer</div>
+      <p className="footer-text">©2022 Revive Repair Ltd • Company number 9868638 • All Rights Reserved • <a href="/">Terms & Conditions</a> • Design by <a href="/">Robert Bish</a></p>
   )
-}
+};
 
-export default Footer
+export default Footer;

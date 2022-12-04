@@ -1,0 +1,15 @@
+.footer {
+  text-align: center;
+  line-height: 1rem;
+  background-color: #f47323;
+  font-size: 0.8rem;
+  font-weight: 350;
+  height: 5rem;
+  padding: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
