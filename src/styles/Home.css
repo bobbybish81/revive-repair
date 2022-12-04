@@ -128,15 +128,15 @@
 /* certificates */
 .certificates {
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 1rem;
+  margin: 1rem auto 2rem auto;
 }
 
 .certificate-image {
   height: 4rem;
-  width: 5rem;
+  width: 5.5rem;
   margin-top: 1rem;
 }
 

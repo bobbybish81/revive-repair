@@ -24,7 +24,7 @@ function Nav () {
             }
         </div>
         <div className="menu-container">
-          <div className="mobile-menu" style={ {height: isOpen ? '50vh' : '0vh'} }>
+          <div className="mobile-menu" style={ {height: isOpen ? '38vh' : '0vh'} }>
             <ul className="nav-links">
               <li>HOME</li>
               <li>SERVICES</li>

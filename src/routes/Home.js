@@ -56,7 +56,7 @@ function Home() {
       </article>
         <article className="certificates">
           <img className="certificate-image" alt="PASMA logo" src={require(".././images/logos/PASMA.jpeg")}/>
-          <img className="certificate-image" alt="CSCS logo" src={require(".././images/logos/CSCS.jpeg")}/>
+          <img className="certificate-image" alt="CSCS logo" src={require(".././images/logos/CSCS.png")}/>
           <img className="certificate-image" alt="Safe Contractor logo" src={require(".././images/logos/safe_contractor.jpeg")}/>
           <img className="certificate-image" alt="SSIP logo" src={require(".././images/logos/SSIP_accredited.jpeg")}/>
         </article>
