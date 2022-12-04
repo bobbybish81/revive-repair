@@ -13,7 +13,7 @@ function Nav () {
     <nav>
       <section className="mobile">
         <div className="nav-contacts">
-          <p className="address">Revive Ltd, Spencer House, 11 Spencer Avenue, Hove East Sussex BN3 8BZ</p>
+          <p className="address">Placeholder</p>
         </div>
         <div className="navbar">
           <div className="logo-container">
@@ -39,7 +39,7 @@ function Nav () {
 
       <section className="desktop">
         <div className="nav-contacts">
-          <p className="address">Revive Ltd, Spencer House, 11 Spencer Avenue, Hove East Sussex BN3 8BZ</p>
+          <p className="address">Placeholder</p>
           <div className="contact-details">
             <span className="material-symbols-outlined contact-logo">call</span><p>07917 442218</p>
             <span className="material-symbols-outlined contact-logo">mail</span><p>info@reviverepairs.com</p>
