@@ -3,10 +3,10 @@ import '.././styles/Nav.css';
 
 function Nav () {
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   function toggle () {
-    isOpen === true ? setIsOpen(false) : setIsOpen(true);
+    openMenu === true ? setOpenMenu(false) : setOpenMenu(true);
   }
 
   return (
@@ -19,17 +19,19 @@ function Nav () {
           <div className="logo-container">
             <img className="revive-logo" alt="REVIVE Ltd" src={require("../images/logos/revive_logo.png")}/>
           </div>
-            {isOpen ? <button className="menu-closebtn" onClick={toggle}>×</button> :
+            {openMenu ? <button className="menu-closebtn" onClick={toggle}>×</button> :
             <button className="menu-openbtn" onClick={toggle}>☰</button>
             }
         </div>
         <div className="menu-container">
-          <div className="mobile-menu" style={ {height: isOpen ? '38vh' : '0vh'} }>
+          <div className="mobile-menu" style={ {height: openMenu ? '20rem' : '0'} }>
             <ul className="nav-links">
               <li>HOME</li>
               <li>SERVICES</li>
               <li>GALLERY</li>
               <li>CONTACT US</li>
+              <li>Tel: 07917 442218</li>
+              <li>Email: info@reviverepairs.com</li>
             </ul>
           </div>
         </div>

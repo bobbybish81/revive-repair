@@ -36,10 +36,10 @@ function Home() {
       </section>
       <section className="main-home-content">
         <article className="services">
-          <p className="services-text">We are a fully accredited, work safe contractor who save our clients time and money by NOT replacing damaged items but by repairing them on site. Scratches, dents, cracks, stains and scuff marks, even fatigued surfaces can be made good or revived by our fully trained technicians. Revive can even resurface items in different colours to the original, giving a fresh new look to outdated paint schemes and fashions.</p>
+          <p className="services-text">Revive are a fully accredited, work safe contractor who save our clients time and money by NOT replacing damaged items but by repairing them on site. Scratches, dents, cracks, stains and scuff marks, even fatigued surfaces can be revived by our fully trained technicians. We can even resurface items in different colours to the original, giving a fresh new look to outdated paint schemes and fashions.</p>
           <p className="services-text">Whether the cause is impact, staining, contamination, burning, vandalism or simply accidental damage, Revive can make any surface as good as new.</p>
-          <p className="services-text">Revive Ltd offer our specialist repairs to a wide range of sectors from construction, retail, sports & Leisure, Hotel & catering, NHS/health care, education and domestic properties, just to mention a few. Our fully trained technicians are equipped to carry out on-site repairs in almost any situation.</p>
-          <p className="services-text">Revive can be called upon at any time with full coverage across Sussex, Surrey and Kent. Whether you require a one off small repair or you need us to cover a number of sites, Revive Ltd can help .</p>
+          <p className="services-text">We offer specialist repairs to a wide range of sectors from construction, retail, sports & leisure, hotel & catering, NHS/health care, education and domestic properties. Our technicians are equipped to carry out on-site repairs in almost any situation.</p>
+          <p className="services-text">Revive can be called upon at any time with full coverage across Sussex, Surrey and Kent. Whether you require a one off small repair or you need us to visit a number of sites, Revive can help.</p>
         </article>
         <article className="quote">
         <div className="quote-req">

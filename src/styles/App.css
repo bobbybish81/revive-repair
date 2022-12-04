@@ -1,10 +1,15 @@
 .header {
   width: 100%;
-  position: sticky;
-  top: 0;
   z-index: 99;
 }
 
 .footer {
   width: 100%;
+}
+
+@media only screen and (min-width: 980px) {
+.header {
+  position: sticky;
+  top: 0;
+  }
 }

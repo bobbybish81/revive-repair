@@ -20,12 +20,24 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .revive-logo {
   height: 4em;
   margin-left: 1em;
+}
+
+.menu-closebtn,
+.menu-openbtn {
+  background-color: #fff;
+  border: none;
+  margin-right: 1.5rem;
+  color: #104ca0;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-container {
@@ -40,37 +52,33 @@ nav {
   background-color: #fff;
   border-bottom: 1px solid #cecdcd;
   overflow-x: hidden;
-  transition: 0.35s;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.menu-closebtn,
-.menu-openbtn {
-  background-color: #fff;
-  border: none;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  color: #104ca0;
-  font-size: 2.5rem;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: all 0.5s;
 }
 
 .nav-links {
-  height: 70%;
+  height: 20rem;
+  padding-top: 2rem;
   display: grid;
 }
 
 .nav-links li {
   color: #104ca0;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   text-align: center;
   font-weight: 500;
+}
+
+.nav-links li:nth-of-type(5) {
+  margin-top: 2rem;
+}
+
+.nav-links li:nth-of-type(5),
+.nav-links li:nth-of-type(6) {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .nav-links li:hover {
