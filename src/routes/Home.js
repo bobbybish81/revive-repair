@@ -11,7 +11,7 @@ function Home() {
           <div>
             <p className="intro-text">Please get in touch for a competitive quote.</p>
             <h2 className="intro-contact">CALL 07917 442218</h2>
-            <h2 className="intro-contact">Email info@reviverepairs.com</h2>
+            <h2 className="intro-contact">info@reviverepairs.com</h2>
           </div>
         </article>
       </section>
@@ -22,7 +22,7 @@ function Home() {
           <div>
             <p className="intro-text">Please get in touch for a competitive quote.</p>
             <h2 className="intro-contact">CALL 07917 442218</h2>
-            <h2 className="intro-contact">Email info@reviverepairs.com</h2>
+            <h2 className="intro-contact">EMAIL info@reviverepairs.com</h2>
           </div>
         </article>
         <article className="article-intro-image">

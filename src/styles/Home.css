@@ -3,7 +3,7 @@
 }
 
 .main-home-intro-mobile {
-  height: 30rem;
+  height: 35rem;
   margin: 0 auto;
   font-size: 1.25em;
   font-weight: 500;
@@ -49,6 +49,7 @@
 
 .intro-contact {
   border: 3px solid #fff;
+  font-size: 1rem;
   background-color: #f47323;
   width: 80%;
   padding: 0.75em;
@@ -60,39 +61,6 @@
 .intro-contact:nth-of-type(2),
 .intro-contact:nth-of-type(4) {
   background-color: #104ca0;
-}
-
-/* home images */
-.article-intro-image {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro-image {
-  width: 17rem;
-  height: 17rem;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  transition: all 0.9s ease;
-  position: relative;
-  background-size: 12em 12em;
-}
-
-.image-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 7rem;
-  height: 7rem;
-  background-color: #104ca0;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: -15px;
-  left: -50px;
 }
 
 /* services */
@@ -131,11 +99,17 @@
   margin: 0.25em;
 }
 
-@media only screen and (max-width: 1138px) {
-  .intro-image {
-    width: 15rem;
-    height: 15rem;
+@media only screen and (min-width: 1138px) {
+
+  .intro-heading {
+    font-size: 2.5rem;
   }
+
+  .intro-image {
+    width: 17rem;
+    height: 17rem;
+  }
+
 }
 
 @media only screen and (min-width: 980px) {
@@ -154,12 +128,12 @@
     border-bottom: 1px solid #cecdcd;
     background-blend-mode: overlay;
     background-color: rgba(93, 92, 89, 0.4);
-    background-image: url('.././images/desktop_bathroom.jpeg');
+    background-image: url('.././images/desktop_bathroom.png');
     background-size: cover;
   }
 
   .intro-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0.1rem;
     margin: 0 auto;
     border-bottom: 3px solid #fff;
@@ -174,8 +148,41 @@
     margin: 0 auto;
   }
 
-  .intro-number {
-    width: 70%;
+  .intro-contact {
+    width: 75%;
+    font-size: 1.2rem;
+  }
+
+  .article-intro-image {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-image {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: all 0.9s ease;
+    position: relative;
+    background-size: 12em 12em;
+  }
+  
+  .image-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: #104ca0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -50px;
   }
 
   .services {
