@@ -1,15 +1,54 @@
 .footer {
   text-align: center;
   line-height: 1rem;
-  background-color: #f47323;
+  background-color: #ffffff;
   font-size: 0.8rem;
   font-weight: 350;
-  height: 4rem;
-  padding: 1rem;
+}
+
+.footer-text-container {
+  background-color: #f47323;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0,
 }
 
 footer a {
   text-decoration: none;
-  cursor: pointer;
   color: #fff;
+}
+
+.certificates {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0;
+}
+
+.certificate-image {
+  height: 6rem;
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 980px) {
+
+  .certificates {
+    height: 8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .certificate-image {
+    height: 5em;
+    width: 10em;
+  }
+
+  .footer-text-container {
+    height: 3rem;
+    padding: 1rem;
+  }
 }

@@ -9,13 +9,13 @@ nav {
   background-color: #f47323;
   font-size: 0.65rem;
   font-weight: 350;
-  height: 2.5em;
+  height: 2.5rem;
   text-align: center;
 }
 
 .navbar {
   width: 100%;
-  height: 5em;
+  height: 5rem;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -23,8 +23,8 @@ nav {
 }
 
 .revive-logo {
-  height: 4em;
-  margin-left: 1em;
+  height: 4rem;
+  margin-left: 1rem;
 }
 
 .menu-closebtn,
@@ -110,11 +110,6 @@ nav {
     border-bottom: 1px solid #cecdcd;
   }
 
-  .revive-logo {
-    height: 6em;
-    margin-left: 3em;
-  }
-
   .contact-details {
     display: flex;
     justify-content: center;
@@ -136,11 +131,18 @@ nav {
     font-size: 1.5em;
   }
 
-  .address {
+  .placeholder {
     margin-left: 3em;
   }
 
+  .revive-logo {
+    height: 6em;
+    margin-left: 2em;
+  }
+
   .nav-links {
+    height: 6rem;
+    padding: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
