@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import '.././styles/Home.css'
+import '.././styles/Images.css'
 
-function Home() {
+function Home({introImages}) {
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+        if (index === introImages.length - 1) {
+            setIndex(0);
+        } 
+        else {
+            setIndex(index + 1);
+        }
+    }, 6000)
+    return () => clearInterval(intervalId);
+  }, [index, introImages.length])
+
   return (
     <>
       <section className="main-home-intro-mobile">
@@ -25,14 +41,24 @@ function Home() {
             <h2 className="intro-contact">EMAIL info@reviverepairs.com</h2>
           </div>
         </article>
-        <article className="article-intro-image">
-          <div className="intro-image" id="after-image">
-            <p className="image-text">BEFORE</p>
+        <article className="intro-image-article">
+          <div className="intro-image-container">
+            <img
+                className="intro-image"
+                src={require( `../images/before_images/${introImages[index]}`)}
+                alt="Before_Image"
+                />
+            <p className="intro-image-text">BEFORE</p>
           </div>
         </article>
-        <article className="article-intro-image">
-          <div className="intro-image" id="after-image">
-            <p className="image-text">AFTER</p>
+        <article className="intro-image-article">
+          <div className="intro-image-container">
+            <img
+              className="intro-image"
+              src={require( `../images/after_images/${introImages[index]}`)}
+              alt="After_Image"
+              />
+            <p className="intro-image-text">AFTER</p>
           </div>
         </article>
       </section>
@@ -45,8 +71,10 @@ function Home() {
         </article>
         <article className="quote">
         <div className="quote-req">
+          <h1 className="quote-req-heading">NEED A QUOTE?</h1>
           <p className="quote-text">If you need any more information about our services or require a quote, please get in touch with us.</p>
-          <button className="quote-btn">Click here for a FREE quote</button>
+          <h2 className="quote-email">SEND AN EMAIL</h2>
+          <h2 className="quote-number">CALL 07917 442218</h2>
         </div>
         </article>
       </section>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import '.././styles/Nav.css';
 
 function Nav () {
@@ -12,9 +13,6 @@ function Nav () {
   return (
     <nav>
       <section className="mobile">
-        <div className="nav-contacts">
-          <p className="placeholders">Placeholder</p>
-        </div>
         <div className="navbar">
           <div className="logo-container">
             <img className="revive-logo" alt="REVIVE Ltd" src={require("../images/logos/revive_logo.png")}/>
@@ -26,12 +24,17 @@ function Nav () {
         <div className="menu-container">
           <div className="mobile-menu" style={ {height: openMenu ? '20rem' : '0'} }>
             <ul className="nav-links">
-              <li>HOME</li>
-              <li>SERVICES</li>
-              <li>GALLERY</li>
-              <li>CONTACT US</li>
-              <li>Tel: 07917 442218</li>
-              <li>Email: info@reviverepairs.com</li>
+              <Link to={'/'}>
+                <li>HOME</li>
+              </Link>
+              <Link to={'/Services'}>
+                <li>SERVICES</li>
+              </Link>
+              <Link to={'/Gallery'}>
+                <li>GALLERY</li>
+              </Link>
+              <li className="nav-links-contact">EMAIL info@reviverepairs.com</li>
+              <li className="nav-links-contact">CALL 07917 442218</li>
             </ul>
           </div>
         </div>
@@ -39,7 +42,6 @@ function Nav () {
 
       <section className="desktop">
         <div className="nav-contacts">
-          <p className="placeholders">Placeholder</p>
           <div className="contact-details">
             <span className="material-symbols-outlined contact-logo">call</span><p>07917 442218</p>
             <span className="material-symbols-outlined contact-logo">mail</span><p>info@reviverepairs.com</p>
@@ -50,10 +52,15 @@ function Nav () {
             <img className="revive-logo" alt="REVIVE Ltd" src={require("../images/logos/revive_logo.png")}/>
           </div>
           <ul className="nav-links">
-            <li>HOME</li>
-            <li>SERVICES</li>
-            <li>GALLERY</li>
-            <li>CONTACT US</li>
+            <Link to={'/'}>
+              <li>HOME</li>
+            </Link>
+            <Link to={'/Services'}>
+              <li>SERVICES</li>
+            </Link>
+            <Link to={'/Gallery'}>
+              <li>GALLERY</li>
+            </Link>
           </ul>
         </div>
       </section>

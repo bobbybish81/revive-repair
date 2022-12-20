@@ -16,7 +16,6 @@
 }
 
 .main-home-content {
-  /* height: 26em; */
   border-bottom: 4px solid #f47323;
   width: 80%;
   margin: 0 auto 2em;
@@ -39,7 +38,7 @@
   font-size: 1.75rem;
   padding-bottom: 0.5rem;
   margin: 1rem auto;
-  border-bottom: 3px solid #fff;
+  /* border-bottom: 3px solid #fff; */
 }
 
 .intro-text {
@@ -48,19 +47,29 @@
 }
 
 .intro-contact {
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   font-size: 1rem;
   background-color: #f47323;
   width: 80%;
+  max-width: 20rem;
   padding: 0.75em;
   margin: 1rem auto;
   border-radius: 100px;
   cursor: pointer;
 }
 
+.intro-contact:hover {
+  background-color: #ec9056;
+}
+
 .intro-contact:nth-of-type(2),
 .intro-contact:nth-of-type(4) {
   background-color: #104ca0;
+}
+
+.intro-contact:nth-of-type(2):hover,
+.intro-contact:nth-of-type(4):hover {
+  background-color: #072b5d;
 }
 
 /* services */
@@ -99,18 +108,6 @@
   margin: 0.25em;
 }
 
-@media only screen and (min-width: 1138px) {
-
-  .intro-heading {
-    font-size: 2.5rem;
-  }
-
-  .intro-image {
-    width: 17rem;
-    height: 17rem;
-  }
-
-}
 
 @media only screen and (min-width: 980px) {
 
@@ -120,9 +117,9 @@
 
   .main-home-intro-desktop {
     display: flex;
-    height: 28em;
+    height: 35rem;
     margin: 0 auto;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
     border-bottom: 1px solid #cecdcd;
@@ -134,9 +131,8 @@
 
   .intro-heading {
     font-size: 2rem;
-    padding: 0.1rem;
-    margin: 0 auto;
-    border-bottom: 3px solid #fff;
+    margin: 2rem auto 0 auto;
+    padding: 0.25rem;
   }
 
   .intro {
@@ -150,47 +146,15 @@
 
   .intro-contact {
     width: 75%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  .article-intro-image {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .intro-image {
-    width: 14rem;
-    height: 14rem;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    transition: all 0.9s ease;
-    position: relative;
-    background-size: 12em 12em;
-  }
-  
-  .image-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 7rem;
-    height: 7rem;
-    background-color: #104ca0;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: -15px;
-    left: -50px;
-  }
-
-  .services {
+   .home-services {
     width: 65%;
     margin: 1.5em 0;
    }
 
-   .services-text {
+   .home-services-text {
     text-align: left;
     line-height: 1.25em;
     margin: 1.5em 0;
@@ -206,33 +170,68 @@
   
   .quote-req {
     height: 80%;
-    width: 60%;
+    width: 70%;
     border: none;
     border-radius: 5px;
-    box-shadow: rgba(16, 76, 160, 0.4) 0px 7px 29px 0px;
-    display: grid;
-    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .quote-req-heading {
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #104ca0;
+    font-weight: 700;
   }
   
   .quote-text {
-    width: 80%;
-    margin: 3em auto 1em;
+    margin: 2rem 1rem;
     color: #104ca0;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.5rem;
   }
   
-  .quote-btn {
-    margin: 0 2em 4em;
+  .quote-email {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #f47323;
+  }
+
+  .quote-email:hover {
+    color: #104ca0;
+    cursor: pointer;
+  }
+
+  .quote-number {
+    width: 85%;
+    margin: 2rem auto;
+    padding: 1rem;
     background-color: #f47323;
     border: none;
     border-radius: 100px;
     color: #fff;
-    font-weight: 500;
+    text-align: center;
+    font-size: 0.9rem;
   }
   
-  .quote-btn:hover {
+  .quote-number:hover {
     background-color: #ec9056;
     cursor: pointer;
+  }
+
+}
+
+@media only screen and (min-width: 1138px) {
+
+  .intro-heading {
+    font-size: 2.5rem;
+    padding: 0.25rem;
+    margin: 2rem auto 0 auto;
+  }
+
+  .quote-number {
+    font-size: 1rem;
   }
 }

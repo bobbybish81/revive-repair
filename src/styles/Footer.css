@@ -36,7 +36,9 @@ footer a {
 @media only screen and (min-width: 980px) {
 
   .certificates {
-    height: 8em;
+    width: 80%;
+    margin: 0 auto;
+    height: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,7 +50,7 @@ footer a {
   }
 
   .footer-text-container {
-    height: 3rem;
+    height: 2rem;
     padding: 1rem;
   }
 }

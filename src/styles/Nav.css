@@ -1,18 +1,3 @@
-nav {
-  /* min-width: 375px; */
-}
-
-.nav-contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f47323;
-  font-size: 0.65rem;
-  font-weight: 350;
-  height: 2.5rem;
-  text-align: center;
-}
-
 .navbar {
   width: 100%;
   height: 5rem;
@@ -71,14 +56,13 @@ nav {
   font-weight: 500;
 }
 
-.nav-links li:nth-of-type(5) {
-  margin-top: 2rem;
-}
-
-.nav-links li:nth-of-type(5),
-.nav-links li:nth-of-type(6) {
+ul .nav-links-contact {
   font-size: 1rem;
   font-weight: 400;
+}
+
+ul .nav-links-contact:nth-of-type(1) {
+  margin-top: 2rem;
 }
 
 .nav-links li:hover {
@@ -101,25 +85,35 @@ nav {
   }
 
   .nav-contacts {
-    justify-content: space-between;
-    font-size: 0.8em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #f47323;
+    height: 1.5rem;
   }
 
   .navbar {
-    height: 7em;
+    height: 7rem;
     border-bottom: 1px solid #cecdcd;
   }
 
   .contact-details {
+    height: 1.5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: 3em;
+    margin-left: 2rem;
+  } 
+  
+  span.contact-logo {
+    font-size: 1rem;
   }
 
   .contact-details p {
-    margin: 0 4em 0 0.25em;
-    letter-spacing: 0.75px;
+    margin: 0 1rem 0 0.1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
   }
 
   .contact-details .contact-logo:hover,
@@ -157,7 +151,7 @@ nav {
 
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1138px) {
 
   .nav-links li {
     margin: 0 2.5rem;
