@@ -33,7 +33,7 @@ function Nav () {
               <Link to={'/Gallery'}>
                 <li onClick={toggle}>GALLERY</li>
               </Link>
-              <li className="nav-links-contact">EMAIL info@reviverepairs.com</li>
+              <li className="nav-links-contact"><span className="material-symbols-outlined email-logo">mail</span> info@reviverepairs.com</li>
               <li className="nav-links-contact">CALL 07917 442218</li>
             </ul>
           </div>

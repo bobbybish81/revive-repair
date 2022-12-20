@@ -62,7 +62,9 @@ ul .nav-links-contact {
 }
 
 ul .nav-links-contact:nth-of-type(1) {
-  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links li:hover {
