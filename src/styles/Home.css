@@ -46,7 +46,15 @@
   padding: 0 1.5rem;
 }
 
+.email-logo {
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
 .intro-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #fff;
   font-size: 1rem;
   background-color: #f47323;
@@ -107,7 +115,6 @@
   line-height: 1.5rem;
   margin: 0.25em;
 }
-
 
 @media only screen and (min-width: 980px) {
 

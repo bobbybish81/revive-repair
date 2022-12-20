@@ -38,7 +38,7 @@ function Home({introImages}) {
           <div>
             <p className="intro-text">Please get in touch for a competitive quote.</p>
             <h2 className="intro-contact">CALL 07917 442218</h2>
-            <h2 className="intro-contact">EMAIL info@reviverepairs.com</h2>
+            <h2 className="intro-contact"><span className="material-symbols-outlined email-logo">mail</span> info@reviverepairs.com</h2>
           </div>
         </article>
         <article className="intro-image-article">
