@@ -39,7 +39,7 @@ function Services() {
         <p>We pride ourselves on the quality of our work. We are confident that we can offer very competitive rates compared to other larger competitors with greater overheads who may look to compromise on quality!</p>
       </article>
     </section>
-    <h2 className="services-detail-heading">WE CAN REVIVE ALL OF THIS AND MORE</h2>
+    <h2 className="services-detail-heading">WE CAN REVIVE ALL THIS AND MORE</h2>
     <section className="services-detail-container">
       <article className="services-detail">x
         <span className="material-symbols-outlined check-circle">check_circle</span>
