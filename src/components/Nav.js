@@ -25,13 +25,13 @@ function Nav () {
           <div className="mobile-menu" style={ {height: openMenu ? '20rem' : '0'} }>
             <ul className="nav-links">
               <Link to={'/'}>
-                <li>HOME</li>
+                <li onClick={toggle}>HOME</li>
               </Link>
               <Link to={'/Services'}>
-                <li>SERVICES</li>
+                <li onClick={toggle}>SERVICES</li>
               </Link>
               <Link to={'/Gallery'}>
-                <li>GALLERY</li>
+                <li onClick={toggle}>GALLERY</li>
               </Link>
               <li className="nav-links-contact">EMAIL info@reviverepairs.com</li>
               <li className="nav-links-contact">CALL 07917 442218</li>
