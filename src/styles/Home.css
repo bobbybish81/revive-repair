@@ -18,14 +18,13 @@
 .home-services-container {
   border-bottom: 4px solid #f47323;
   width: 80%;
-  margin: 0 auto 2em;
+  margin: 0 auto 2rem;
   display: flex;
 }
 
-/* home intro */
 .intro {
   display: grid;
-  width: 100%;
+  width: 20rem;
   height: 100%;
   margin: 0 auto;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -38,7 +37,6 @@
   font-size: 1.75rem;
   padding-bottom: 0.5rem;
   margin: 1rem auto;
-  /* border-bottom: 3px solid #fff; */
 }
 
 .intro-text {
@@ -81,7 +79,6 @@
   background-color: #072b5d;
 }
 
-/* services */
 .home-services {
   width: 100%;
  }
@@ -98,16 +95,13 @@
   display: none;
 }
 
-/* repairs */
 .repairs-container {
-  width: 100%;
   background-color: #104ca0;
   text-align: center;
   padding: 1rem;
 }
 
 .repair-heading {
-  width: 100%;
   font-size: 1.5em;
   margin: 0 auto 1.5rem auto;
 }

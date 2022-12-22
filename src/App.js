@@ -12,6 +12,7 @@ function App() {
     'baths.jpeg',
     'brick_tinting.jpeg',
     'composite_doors.jpeg',
+    'window_frames.webp',
     'foil_wrapped_UPVC.jpeg',
     'garage_door_respray.jpeg',
     'GRP.jpeg',

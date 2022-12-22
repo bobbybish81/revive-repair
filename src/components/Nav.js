@@ -76,13 +76,13 @@ function Nav () {
           <div className="mobile-menu" style={openMenu ? menuStyles.Active : menuStyles.Inactive}>
             <ul className="nav-links">
               <Link to={'/'}>
-                <li onClick={menuToggle}><span class="material-symbols-outlined link-icon">home</span>HOME</li>
+                <li onClick={menuToggle}><span className="material-symbols-outlined link-icon">home</span>HOME</li>
               </Link>
               <Link to={'/Services'}>
-                <li onClick={menuToggle}><span class="material-symbols-outlined link-icon">home_repair_service</span>SERVICES</li>
+                <li onClick={menuToggle}><span className="material-symbols-outlined link-icon">home_repair_service</span>SERVICES</li>
               </Link>
               <Link to={'/Gallery'}>
-                <li onClick={menuToggle}><span class="material-symbols-outlined link-icon">gallery_thumbnail</span>GALLERY</li>
+                <li onClick={menuToggle}><span className="material-symbols-outlined link-icon">gallery_thumbnail</span>GALLERY</li>
               </Link>
               <li className="nav-links-contact"><span className="material-symbols-outlined link-icon">mail</span> info@reviverepairs.com</li>
               <li className="nav-links-contact">CALL 07917 442218</li>

@@ -8,6 +8,7 @@
 }
 
 @media only screen and (min-width: 980px) {
+
 .header {
   position: sticky;
   top: 0;
