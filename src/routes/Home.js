@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import '.././styles/Home.css'
-import '.././styles/Images.css'
 
-function Home({introImages}) {
+function Home({workImages}) {
 
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-        if (index === introImages.length - 1) {
+        if (index === workImages.length - 1) {
             setIndex(0);
         } 
         else {
@@ -16,11 +15,11 @@ function Home({introImages}) {
         }
     }, 6000)
     return () => clearInterval(intervalId);
-  }, [index, introImages.length])
+  }, [index, workImages.length])
 
   return (
     <>
-      <section className="main-home-intro-mobile">
+      <section className="home-intro-mobile">
         <article className="intro">
           <h1 className="intro-heading">WE REVIVE SURFACES</h1>
           <p className="intro-text">Revive Repairs specialise in repairing and renovating scratches, dents, cracks, marks and damaged surfaces. Our technicians are fully trained in all aspects of surface repair technology and are CSCS & SSSTS qualified.</p>
@@ -31,7 +30,7 @@ function Home({introImages}) {
           </div>
         </article>
       </section>
-      <section className="main-home-intro-desktop">
+      <section className="home-intro-desktop">
         <article className="intro">
           <h1 className="intro-heading">WE REVIVE SURFACES</h1>
           <p className="intro-text">Revive Repairs specialise in repairing and renovating scratches, dents, cracks, marks and damaged surfaces. Our technicians are fully trained in all aspects of surface repair technology and are CSCS & SSSTS qualified.</p>
@@ -45,7 +44,7 @@ function Home({introImages}) {
           <div className="intro-image-container">
             <img
                 className="intro-image"
-                src={require( `../images/before_images/${introImages[index]}`)}
+                src={require( `../images/before_images/${workImages[index]}`)}
                 alt="Before_Image"
                 />
             <p className="intro-image-text">BEFORE</p>
@@ -55,23 +54,23 @@ function Home({introImages}) {
           <div className="intro-image-container">
             <img
               className="intro-image"
-              src={require( `../images/after_images/${introImages[index]}`)}
+              src={require( `../images/after_images/${workImages[index]}`)}
               alt="After_Image"
               />
             <p className="intro-image-text">AFTER</p>
           </div>
         </article>
       </section>
-      <section className="main-home-content">
+      <section className="home-services-container">
         <article className="home-services">
           <p className="home-services-text">Revive are a fully accredited, work safe contractor who save our clients time and money by NOT replacing damaged items but by repairing them on site. Scratches, dents, cracks, stains and scuff marks, even fatigued surfaces can be revived by our fully trained technicians. We can even resurface items in different colours to the original, giving a fresh new look to outdated paint schemes and fashions.</p>
           <p className="home-services-text">Whether the cause is impact, staining, contamination, burning, vandalism or simply accidental damage, Revive can make any surface as good as new.</p>
           <p className="home-services-text">We offer specialist repairs to a wide range of sectors from construction, retail, sports & leisure, hotel & catering, NHS/health care, education and domestic properties. Our technicians are equipped to carry out on-site repairs in almost any situation.</p>
           <p className="home-services-text">Revive can be called upon at any time with full coverage across Sussex, Surrey and Kent. Whether you require a one off small repair or you need us to visit a number of sites, Revive can help.</p>
         </article>
-        <article className="quote">
-        <div className="quote-req">
-          <h1 className="quote-req-heading">NEED A QUOTE?</h1>
+        <article className="quote-container">
+        <div className="quote">
+          <h1 className="quote-heading">NEED A QUOTE?</h1>
           <p className="quote-text">If you need any more information about our services or require a quote, please get in touch with us.</p>
           <h2 className="quote-email">SEND AN EMAIL</h2>
           <h2 className="quote-number">CALL 07917 442218</h2>
@@ -79,11 +78,11 @@ function Home({introImages}) {
         </article>
       </section>
       <section>
-      <article className="repairs">
-        <h2 className="repair-heading">WHAT WE CAN REVIVE</h2>
-        <p className="repairs-text">BASINS | BATHS | BRICKS | CLADDING & PANELLING | CONSERVATORIES | COUNTER-TOPS | DOORS | FURNITURE | FLOORS | FORMICA | GRP | HIGH GLOSS | IPS | KITCHEN UNITS</p>
-        <p className="repairs-text">KITCHEN DOORS | LAMINATES AND VENEERS | MARBLE | POWDER-COATED SURFACES | SHOWER TRAYS | STONE | STAINLESS STEEL | TILES | WINDOW FRAMES | uPVC</p>
-      </article>
+        <article className="repairs-container">
+          <h2 className="repair-heading">WHAT WE CAN REVIVE</h2>
+          <p className="repairs-text">BASINS | BATHS | BRICKS | CLADDING & PANELLING | CONSERVATORIES | COUNTER-TOPS | DOORS | FURNITURE | FLOORS | FORMICA | GRP | HIGH GLOSS | IPS | KITCHEN UNITS</p>
+          <p className="repairs-text">KITCHEN DOORS | LAMINATES AND VENEERS | MARBLE | POWDER-COATED SURFACES | SHOWER TRAYS | STONE | STAINLESS STEEL | TILES | WINDOW FRAMES | uPVC</p>
+        </article>
       </section>
     </>
   )

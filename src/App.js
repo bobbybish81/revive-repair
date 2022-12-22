@@ -8,8 +8,8 @@ import './styles/App.css';
 
 function App() {
   
-  const introImages = [
-    'bath.jpeg',
+  const workImages = [
+    'baths.jpeg',
     'brick_tinting.jpeg',
     'composite_doors.jpeg',
     'foil_wrapped_UPVC.jpeg',
@@ -27,11 +27,13 @@ function App() {
     <header className="header">
       <Nav />
     </header>
-    <Routes>
-      <Route path="/" element={<Home introImages={introImages}/>}></Route>
-      <Route path="/Services" element={<Services/>}></Route>
-      <Route path="/Gallery" element={<Gallery/>}></Route>
-    </Routes>
+    <main className="main-container">
+      <Routes>
+        <Route path="/" element={<Home workImages={workImages}/>}></Route>
+        <Route path="/Services" element={<Services/>}></Route>
+        <Route path="/Gallery" element={<Gallery workImages={workImages}/>}></Route>
+      </Routes>
+    </main>
     <footer className="footer">
       <Footer />
     </footer>

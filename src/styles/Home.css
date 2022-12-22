@@ -1,11 +1,11 @@
-.main-home-intro-desktop {
+.home-intro-desktop {
   display: none;
 }
 
-.main-home-intro-mobile {
+.home-intro-mobile {
   height: 35rem;
   margin: 0 auto;
-  font-size: 1.25em;
+  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
   border-bottom: 1px solid #cecdcd;
@@ -15,7 +15,7 @@
   background-size: cover;
 }
 
-.main-home-content {
+.home-services-container {
   border-bottom: 4px solid #f47323;
   width: 80%;
   margin: 0 auto 2em;
@@ -90,15 +90,15 @@
   text-align: center;
   line-height: 1.5em;
   margin: 1rem 0;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
-.quote {
+.quote-container {
   display: none;
 }
 
 /* repairs */
-.repairs {
+.repairs-container {
   width: 100%;
   background-color: #104ca0;
   text-align: center;
@@ -118,15 +118,15 @@
 
 @media only screen and (min-width: 980px) {
 
-  .main-home-intro-mobile {
+  .home-intro-mobile {
     display: none;
   }
 
-  .main-home-intro-desktop {
+  .home-intro-desktop {
     display: flex;
     height: 35rem;
     margin: 0 auto;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
     border-bottom: 1px solid #cecdcd;
@@ -156,7 +156,41 @@
     font-size: 1.1rem;
   }
 
-   .home-services {
+  .intro-image-article {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-image-container {
+    position: relative;
+  }
+
+  .intro-image {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+
+  .intro-image-text {
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #104ca0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -1rem;
+    left: -2.5rem;
+  }
+
+  .home-services {
     width: 65%;
     margin: 1.5em 0;
    }
@@ -165,9 +199,10 @@
     text-align: left;
     line-height: 1.25em;
     margin: 1.5em 0;
+    font-size: 1.1rem;
   }
 
-  .quote {
+  .quote-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +210,7 @@
     margin: 1.5em 0;
   }
   
-  .quote-req {
+  .quote {
     height: 80%;
     width: 70%;
     border: none;
@@ -183,7 +218,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
-  .quote-req-heading {
+  .quote-heading {
     width: 100%;
     margin-top: 3rem;
     font-size: 1.25rem;
@@ -232,6 +267,10 @@
 
 @media only screen and (min-width: 1138px) {
 
+  .home-intro-desktop {
+    font-size: 1.25rem;
+  }
+
   .intro-heading {
     font-size: 2.5rem;
     padding: 0.25rem;
@@ -240,5 +279,23 @@
 
   .quote-number {
     font-size: 1rem;
+  }
+
+  .intro-image {
+    width: 17rem;
+    height: 17rem;
+    transition: all 0.9s ease;
+  }
+
+  .intro-image-text {
+    width: 7rem;
+    height: 7rem;
+    font-size: 1.25rem;
+    top: -1rem;
+    left: -3,75rem;
+  }
+
+  .home-services-text {
+    font-size: 1.15rem;
   }
 }

@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #cecdcd;
 }
 
 .revive-logo {
@@ -17,12 +18,15 @@
   background-color: #fff;
   border: none;
   margin-right: 1.5rem;
-  color: #104ca0;
-  font-size: 2rem;
-  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu-icon {
+  color: #104ca0;
+  font-size: 1.75rem;
+  font-weight: 600;
 }
 
 .menu-container {
@@ -34,26 +38,34 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fff;
-  border-bottom: 1px solid #cecdcd;
+  background-color: #fdfbfb;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
+  z-index: 99;
 }
 
 .nav-links {
   height: 20rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   display: grid;
+}
+
+.link-icon {
+  margin-right: 0.5rem;
+  color: #f47323;
 }
 
 .nav-links li {
   color: #104ca0;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   text-align: center;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul .nav-links-contact {
@@ -94,20 +106,16 @@ ul .nav-links-contact:nth-of-type(1) {
     height: 1.5rem;
   }
 
-  .navbar {
-    height: 7rem;
-    border-bottom: 1px solid #cecdcd;
-  }
-
   .contact-details {
     height: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 2rem;
   } 
-  
-  span.contact-logo {
+
+  .contact-logo {
     font-size: 1rem;
+    cursor: pointer;
   }
 
   .contact-details p {
@@ -115,20 +123,13 @@ ul .nav-links-contact:nth-of-type(1) {
     font-size: 0.8rem;
     font-weight: 500;
     text-align: center;
-    letter-spacing: 0.3px;
-  }
-
-  .contact-details .contact-logo:hover,
-  .contact-details p:hover {
+    letter-spacing: 0.75px;
     cursor: pointer;
   }
 
-  .contact-logo {
-    font-size: 1.5em;
-  }
-
-  .placeholder {
-    margin-left: 3em;
+  .navbar {
+    height: 7rem;
+    border-bottom: 1px solid #cecdcd;
   }
 
   .revive-logo {
@@ -149,6 +150,7 @@ ul .nav-links-contact:nth-of-type(1) {
     margin: 0 2rem;
     font-weight: 400;
     font-size: 1.1rem;
+    padding-bottom: 0.1rem;
   }
 
 }

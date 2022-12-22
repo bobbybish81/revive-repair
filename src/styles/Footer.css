@@ -21,7 +21,8 @@ footer a {
 }
 
 .certificates {
-  width: 100%;
+  width: 20rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem 0;
@@ -38,7 +39,6 @@ footer a {
 
   .certificates {
     width: 80%;
-    margin: 0 auto;
     height: 7rem;
     display: flex;
     justify-content: space-around;
