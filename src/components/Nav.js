@@ -2,33 +2,13 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import '.././styles/Nav.css';
 
+// function Nav ({navToggle, homepage, service, gallery}) {
 function Nav () {
 
   const [openMenu, setOpenMenu] = useState(false);
-  const [homeLink, setHomeLink] = useState(true);
-  const [serviceLink, setServiceLink] = useState(false);
-  const [galleryLink, setGalleryLink] = useState(false);
 
   const menuToggle = () => {
     openMenu === true ? setOpenMenu(false) : setOpenMenu(true);
-  }
-
-  const linkToggle = (e) => {
-    if (e.target.id === 'home' && !homeLink) {
-      setHomeLink(true);
-      setServiceLink(false);
-      setGalleryLink(false);
-    }
-    if (e.target.id === 'service' && !serviceLink) {
-      setHomeLink(false);
-      setServiceLink(true);
-      setGalleryLink(false);
-    }
-    if (e.target.id === 'gallery' && !galleryLink) {
-      setHomeLink(false);
-      setServiceLink(false);
-      setGalleryLink(true);
-    }
   }
 
   const menuStyles = {
@@ -42,14 +22,14 @@ function Nav () {
     }
   }
 
-  const linkStyle = {
-    Active: {
-      borderBottom: '1px solid #f47323'
-    },
-    Inactive: {
-      borderBottom: '1px solid #fff'
-    }
-  }
+  // const linkStyle = {
+  //   Active: {
+  //     borderBottom: '1px solid #f47323'
+  //   },
+  //   Inactive: {
+  //     borderBottom: '1px solid #fff'
+  //   }
+  // }
 
   return (
     <nav>
@@ -62,7 +42,6 @@ function Nav () {
                 id='home'
                 alt="REVIVE Ltd"
                 src={require("../images/logos/revive_logo.png")}
-                onClick={linkToggle}
                 />
             </Link>
           </div>
@@ -84,8 +63,8 @@ function Nav () {
               <Link to={'/Gallery'}>
                 <li onClick={menuToggle}><span className="material-symbols-outlined link-icon">gallery_thumbnail</span>GALLERY</li>
               </Link>
-              <li className="nav-links-contact"><span className="material-symbols-outlined link-icon">mail</span> info@reviverepairs.com</li>
-              <li className="nav-links-contact">CALL 07917 442218</li>
+              <li className="nav-links-contact"><span className="material-symbols-outlined link-icon">mail</span><a href="mailto:info@reviverepairs.com">info@reviverepairs.com</a></li>
+              <li className="nav-links-contact"><a href="/">CALL 07917 442218</a></li>
             </ul>
           </div>
         </div>
@@ -94,8 +73,8 @@ function Nav () {
       <section className="desktop">
         <div className="nav-contacts">
           <div className="contact-details">
-            <span className="material-symbols-outlined contact-logo">call</span><p>07917 442218</p>
-            <span className="material-symbols-outlined contact-logo">mail</span><p>info@reviverepairs.com</p>
+            <span className="material-symbols-outlined contact-logo">call</span><a className="contact"href="/">07917 442218</a>
+            <span className="material-symbols-outlined contact-logo">mail</span><a className="mailtoui contact" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
           </div>
         </div>
         <div className="navbar">
@@ -106,7 +85,7 @@ function Nav () {
                 id='home'
                 alt="REVIVE Ltd"
                 src={require("../images/logos/revive_logo.png")}
-                onClick={linkToggle}
+                // onClick={navToggle}
                 />
             </Link>
           </div>
@@ -114,24 +93,27 @@ function Nav () {
             <Link to={'/'}>
               <li
               id='home'
-              onClick={linkToggle}
-              style={homeLink ? linkStyle.Active : linkStyle.Inactive}>
+              // onClick={navToggle}
+              // style={homepage ? linkStyle.Active : linkStyle.Inactive}
+              >
                 HOME
               </li>
             </Link>
             <Link to={'/Services'}>
               <li
               id='service'
-              onClick={linkToggle}
-              style={serviceLink ? linkStyle.Active : linkStyle.Inactive}>
+              // onClick={navToggle}
+              // style={service ? linkStyle.Active : linkStyle.Inactive}
+              >
                 SERVICES
               </li>
             </Link>
             <Link to={'/Gallery'}>
               <li
               id='gallery'
-              onClick={linkToggle}
-              style={galleryLink ? linkStyle.Active : linkStyle.Inactive}>
+              // onClick={navToggle}
+              // style={gallery ? linkStyle.Active : linkStyle.Inactive}
+              >
                 GALLERY
               </li>
             </Link>

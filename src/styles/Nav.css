@@ -68,9 +68,10 @@
   align-items: center;
 }
 
-ul .nav-links-contact {
+.nav-links-contact a {
   font-size: 1rem;
   font-weight: 400;
+  color: #104ca0;
 }
 
 ul .nav-links-contact:nth-of-type(1) {
@@ -118,8 +119,9 @@ ul .nav-links-contact:nth-of-type(1) {
     cursor: pointer;
   }
 
-  .contact-details p {
+  .contact {
     margin: 0 1rem 0 0.1rem;
+    color: #fff;
     font-size: 0.8rem;
     font-weight: 500;
     text-align: center;

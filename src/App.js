@@ -1,13 +1,16 @@
+
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Gallery from './routes/Gallery';
 import Services from './routes/Services';
+import TandCs from './routes/TandCs';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import './styles/App.css';
 
 function App() {
-  
+
   const workImages = [
     'baths.jpeg',
     'brick_tinting.jpeg',
@@ -26,17 +29,18 @@ function App() {
   return (
     <>
     <header className="header">
-      <Nav />
+      <Nav/>
     </header>
     <main className="main-container">
       <Routes>
         <Route path="/" element={<Home workImages={workImages}/>}></Route>
         <Route path="/Services" element={<Services/>}></Route>
         <Route path="/Gallery" element={<Gallery workImages={workImages}/>}></Route>
+        <Route path="/Terms_and_Conditions" element={<TandCs/>}></Route>
       </Routes>
     </main>
     <footer className="footer">
-      <Footer />
+      <Footer/>
     </footer>
     </>
   );

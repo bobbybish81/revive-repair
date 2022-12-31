@@ -1,0 +1,22 @@
+.TandC-container {
+  color: #104ca0;
+  background-color: #fff;
+  padding: 2rem;
+  border-bottom: 1px solid #cecdcd;
+}
+
+.TandC-heading {
+  color: #104ca0;
+  font-weight: 700;
+}
+
+.TandC-container p {
+  color: #515354;
+  line-height: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.TandC-container strong {
+  color: #104ca0;
+}

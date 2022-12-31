@@ -8,11 +8,18 @@
 
 .footer-text-container {
   background-color: #f47323;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0,
+  padding: 0.5rem;
+}
+
+.footer-text-container p {
+  margin: 0.25rem auto;
+}
+
+.footer-text-container b {
+  text-decoration: underline;
 }
 
 footer a {
@@ -20,12 +27,20 @@ footer a {
   color: #fff;
 }
 
-.certificates {
+.pasma-image {
+  width: 18rem;
+  margin: 1rem auto 0 auto;
+}
+
+.certificates-desktop {
+  display: none;
+}
+
+.certificates-mobile {
   width: 20rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1rem 0;
   background-color: #fff;
 }
 
@@ -37,12 +52,22 @@ footer a {
 
 @media only screen and (min-width: 980px) {
 
-  .certificates {
+  .pasma-image {
+    display: none
+  }
+
+  .certificates-mobile{
+    display: none
+  }
+
+  .certificates-desktop {
     width: 80%;
+    margin: 0 auto;
     height: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem 0;
   }
 
   .certificate-image {
@@ -51,7 +76,13 @@ footer a {
   }
 
   .footer-text-container {
+    display: flex;
+    justify-content: space-around;
     height: 2rem;
     padding: 1rem;
+  }
+
+  .footer-text-container p {
+    margin: 0;
   }
 }
