@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import '.././styles/TandCs.css'
 
 const TandCs = () => {
+
+useLayoutEffect(() => {
+  window.scrollTo(0,0)
+})
 
   return (
     <>
