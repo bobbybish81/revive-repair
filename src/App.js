@@ -5,11 +5,12 @@ import Home from './routes/Home';
 import Gallery from './routes/Gallery';
 import Services from './routes/Services';
 import TandCs from './routes/TandCs';
+import Error from './routes/Error';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import './styles/App.css';
 
-function App() {
+const App = () => {
 
   const workImages = [
     'baths.jpeg',
@@ -37,6 +38,7 @@ function App() {
         <Route path="/Services" element={<Services/>}></Route>
         <Route path="/Gallery" element={<Gallery workImages={workImages}/>}></Route>
         <Route path="/Terms_and_Conditions" element={<TandCs/>}></Route>
+        <Route path="*" element={<Error/>}></Route>
       </Routes>
     </main>
     <footer className="footer">

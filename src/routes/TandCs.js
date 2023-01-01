@@ -1,8 +1,8 @@
 import React from 'react';
 import '.././styles/TandCs.css'
 
+const TandCs = () => {
 
-function TandCs() {
   return (
     <>
     <section className="TandC-container">

@@ -1,7 +1,7 @@
 import React from 'react';
 import '.././styles/Services.css'
 
-function Services() {
+const Services = () => {
 
   const services = [
         'BASINS',
@@ -81,7 +81,10 @@ function Services() {
       <section className="services-contact-container">
         <div className="services-contact">
           <p>If you need any more information about our services or require a quote, please get in touch with us.</p>
-          <h3><span className="material-symbols-outlined email-logo">mail</span> info@reviverepairs.com</h3>
+          <h3>
+            <span className="material-symbols-outlined email-logo">mail</span>
+            <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
+          </h3>
           <h3>CALL 07917 442218</h3>
         </div>
       </section>

@@ -112,7 +112,7 @@ ul .nav-links-contact:nth-of-type(1) {
     display: flex;
     align-items: center;
     margin-left: 2rem;
-  } 
+  }
 
   .contact-logo {
     font-size: 1rem;
@@ -126,6 +126,10 @@ ul .nav-links-contact:nth-of-type(1) {
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.75px;
+  }
+
+  .contact:hover {
+    color:#e1e1e2;
     cursor: pointer;
   }
 
@@ -145,7 +149,7 @@ ul .nav-links-contact:nth-of-type(1) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 3em;
+    margin-right: 3rem;
   }
 
   .nav-links li {
@@ -153,6 +157,14 @@ ul .nav-links-contact:nth-of-type(1) {
     font-weight: 400;
     font-size: 1.1rem;
     padding-bottom: 0.1rem;
+  }
+
+  .active-link li {
+    border-bottom: 2px solid #f47323;
+  }
+
+  .non-active-link li {
+    border-bottom: 1px solid #fff;
   }
 
 }

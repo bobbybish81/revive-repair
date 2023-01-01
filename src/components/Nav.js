@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import '.././styles/Nav.css';
 
-// function Nav ({navToggle, homepage, service, gallery}) {
-function Nav () {
+const Nav = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -21,15 +20,6 @@ function Nav () {
       borderBottom: 'none'
     }
   }
-
-  // const linkStyle = {
-  //   Active: {
-  //     borderBottom: '1px solid #f47323'
-  //   },
-  //   Inactive: {
-  //     borderBottom: '1px solid #fff'
-  //   }
-  // }
 
   return (
     <nav>
@@ -85,38 +75,19 @@ function Nav () {
                 id='home'
                 alt="REVIVE Ltd"
                 src={require("../images/logos/revive_logo.png")}
-                // onClick={navToggle}
                 />
             </Link>
           </div>
           <ul className="nav-links">
-            <Link to={'/'}>
-              <li
-              id='home'
-              // onClick={navToggle}
-              // style={homepage ? linkStyle.Active : linkStyle.Inactive}
-              >
-                HOME
-              </li>
-            </Link>
-            <Link to={'/Services'}>
-              <li
-              id='service'
-              // onClick={navToggle}
-              // style={service ? linkStyle.Active : linkStyle.Inactive}
-              >
-                SERVICES
-              </li>
-            </Link>
-            <Link to={'/Gallery'}>
-              <li
-              id='gallery'
-              // onClick={navToggle}
-              // style={gallery ? linkStyle.Active : linkStyle.Inactive}
-              >
-                GALLERY
-              </li>
-            </Link>
+            <NavLink className={({isActive}) => isActive ? "active-link": "non-active-link" } to={'/'}>
+              <li>HOME</li>
+            </NavLink>
+            <NavLink className={({isActive}) => isActive ? "active-link": "non-active-link" } to={'/Services'}>
+              <li>SERVICES</li>
+            </NavLink>
+            <NavLink className={({isActive}) => isActive ? "active-link": "non-active-link" } to={'/Gallery'}>
+              <li>GALLERY</li>
+            </NavLink>
           </ul>
         </div>
       </section>

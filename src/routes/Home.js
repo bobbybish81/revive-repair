@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '.././styles/Home.css'
 
-function Home({workImages}) {
+const Home = ({workImages}) => {
 
   const [index, setIndex] = useState(0);
 
@@ -26,7 +26,10 @@ function Home({workImages}) {
           <div>
             <p className="intro-text">Please get in touch for a competitive quote.</p>
             <h2 className="intro-contact">CALL 07917 442218</h2>
-            <h2 className="intro-contact">info@reviverepairs.com</h2>
+            <h2 className="intro-contact">
+              <span className="material-symbols-outlined email-logo">mail</span>
+              <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
+            </h2>
           </div>
         </article>
       </section>
@@ -37,7 +40,10 @@ function Home({workImages}) {
           <div>
             <p className="intro-text">Please get in touch for a competitive quote.</p>
             <h2 className="intro-contact">CALL 07917 442218</h2>
-            <h2 className="intro-contact"><span className="material-symbols-outlined email-logo">mail</span> info@reviverepairs.com</h2>
+            <h2 className="intro-contact">
+              <span className="material-symbols-outlined email-logo">mail</span>
+              <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
+            </h2>
           </div>
         </article>
         <article className="intro-image-article">
@@ -72,7 +78,9 @@ function Home({workImages}) {
         <div className="quote">
           <h1 className="quote-heading">NEED A QUOTE?</h1>
           <p className="quote-text">If you need any more information about our services or require a quote, please get in touch with us.</p>
-          <h2 className="quote-email">SEND AN EMAIL</h2>
+          <h2 className="quote-email">
+            <a className="mailtoui" href="mailto:info@reviverepairs.com">SEND AN EMAIL</a>
+          </h2>
           <h2 className="quote-number">CALL 07917 442218</h2>
         </div>
         </article>

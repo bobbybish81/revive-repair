@@ -112,6 +112,15 @@
   margin: 0.5rem;
 }
 
+.gallery-contact a {
+  color: #fff;
+}
+
+.gallery-contact a:hover {
+  cursor: pointer;
+  color:#e1e1e2;
+}
+
 .email-logo {
   font-weight: 700;
   margin-right: 0.25rem;

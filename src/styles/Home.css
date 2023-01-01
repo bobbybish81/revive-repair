@@ -65,6 +65,10 @@
   cursor: pointer;
 }
 
+.intro-contact a {
+  color: #fff;
+}
+
 .intro-contact:hover {
   background-color: #ec9056;
 }
@@ -231,12 +235,15 @@
   
   .quote-email {
     width: 100%;
-    font-size: 1.1rem;
     text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .quote-email a {
     color: #f47323;
   }
 
-  .quote-email:hover {
+  .quote-email a:hover {
     color: #104ca0;
     cursor: pointer;
   }

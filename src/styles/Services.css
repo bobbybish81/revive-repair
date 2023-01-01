@@ -107,9 +107,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0.5rem;
+}
+
+.services-contact a {
+  color: #fff;
 }
 
 .email-logo {
@@ -117,9 +121,9 @@
   margin-right: 0.25rem;
 }
 
-.services-contact:hover,
-.services-contact:hover {
+.services-contact a:hover {
   cursor: pointer;
+  color:#e1e1e2;
 }
 
 @media only screen and (min-width: 980px) {
@@ -146,10 +150,6 @@
     background-color: #fff;
   }
   
-  /* .services p {
-    font-weight: 200;
-   } */
-
   .services-detail-heading {
     width: 80%;
     margin: 3rem auto 0 auto;

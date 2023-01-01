@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import '.././styles/Footer.css';
 
-function Footer () {
+const Footer = () => {
   return (
     <>
     <img className="pasma-image" alt="PASMA logo" src={require(".././images/logos/PASMA_Mobile.png")}/>
