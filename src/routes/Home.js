@@ -32,6 +32,7 @@ const Home = ({workImages}) => {
               <span className="material-symbols-outlined email-logo">mail</span>
               <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
             </div>
+            <p className="intro-top-tip">Top Tip - Please attach some pictures of the damaged area along with your contact details and post code. This is so we can assess and help you more quickly and efficiently</p>
           </div>
         </article>
       </section>
@@ -46,6 +47,7 @@ const Home = ({workImages}) => {
               <span className="material-symbols-outlined email-logo">mail</span>
               <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
             </div>
+            <p className="intro-top-tip">Top Tip - Please attach some pictures of the damaged area along with your contact details and post code. This is so we can assess and help you more quickly and efficiently</p>
           </div>
         </article>
         <article className="intro-image-article">

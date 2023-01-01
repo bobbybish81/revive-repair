@@ -9,7 +9,7 @@
 .footer-text-container {
   background-color: #f47323;
   display: grid;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0.5rem;
 }
@@ -20,11 +20,6 @@
 
 .footer-text-container b {
   text-decoration: underline;
-}
-
-footer a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .pasma-image {

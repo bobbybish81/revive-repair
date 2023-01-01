@@ -3,7 +3,7 @@
 }
 
 .home-intro-mobile {
-  height: 35rem;
+  height: 36rem;
   margin: 0 auto;
   font-size: 1.2rem;
   font-weight: 500;
@@ -66,18 +66,24 @@
   text-shadow: none;
 }
 
-.intro-number:hover {
-  background-color: #ec9056;
-  cursor: pointer;
-}
-
 .intro-email {
   background-color: #104ca0;
 }
 
-.intro-email:hover {
-  background-color: #072b5d;
-  cursor: pointer;
+.intro-top-tip {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.intro-email a {
+  color: #fff;
+}
+
+.intro-email a:focus,
+.intro-number a:focus {
+  color: #fff;
 }
 
 .home-services {
@@ -147,10 +153,26 @@
     margin: 0 auto;
   }
 
-  .intro.number,
+  .intro a,
   .intro-email {
     width: 75%;
     font-size: 1.1rem;
+  }
+
+  .intro-top-tip {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .intro-number:hover {
+    background-color: #ea5b02;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .intro-email:hover {
+    background-color: #072b5d;
+    cursor: pointer;
   }
 
   .intro-image-article {
@@ -213,6 +235,7 @@
     border: none;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
   }
 
   .quote-heading {
@@ -263,7 +286,7 @@
   }
 
   .quote-number:hover {
-    background-color: #ec9056;
+    background-color: #ea5b02;
     color: #fff;
     cursor: pointer;
   }
