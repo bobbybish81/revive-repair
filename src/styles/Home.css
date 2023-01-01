@@ -45,42 +45,39 @@
 }
 
 .email-logo {
-  font-weight: 700;
+  font-size: 1rem;
   margin-right: 0.25rem;
 }
 
-.intro-contact {
+.intro-number,
+.intro-email {
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid #fff;
+  color: #fff;
   font-size: 1rem;
   background-color: #f47323;
-  width: 80%;
   max-width: 20rem;
-  padding: 0.75em;
+  padding: 0.75rem;
   margin: 1rem auto;
   border-radius: 100px;
   text-shadow: none;
+}
+
+.intro-number:hover {
+  background-color: #ec9056;
   cursor: pointer;
 }
 
-.intro-contact a {
-  color: #fff;
-}
-
-.intro-contact:hover {
-  background-color: #ec9056;
-}
-
-.intro-contact:nth-of-type(2),
-.intro-contact:nth-of-type(4) {
+.intro-email {
   background-color: #104ca0;
 }
 
-.intro-contact:nth-of-type(2):hover,
-.intro-contact:nth-of-type(4):hover {
+.intro-email:hover {
   background-color: #072b5d;
+  cursor: pointer;
 }
 
 .home-services {
@@ -150,7 +147,8 @@
     margin: 0 auto;
   }
 
-  .intro-contact {
+  .intro.number,
+  .intro-email {
     width: 75%;
     font-size: 1.1rem;
   }
@@ -260,8 +258,13 @@
     font-size: 0.9rem;
   }
   
+  .quote-number a {
+    color: #fff;
+  }
+
   .quote-number:hover {
     background-color: #ec9056;
+    color: #fff;
     cursor: pointer;
   }
 

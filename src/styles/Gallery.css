@@ -103,7 +103,7 @@
   margin-bottom: 1rem;
 }
 
-.gallery-contact h3 {
+.gallery-contact div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,7 +179,7 @@
     justify-content: space-around;
   }
 
-  .gallery-contact h3,
+  .gallery-contact div,
   .gallery-contact p {
     margin: 0;
     font-size: 0.85rem;
@@ -202,7 +202,7 @@
     left: 0.5rem;
   }
 
-  .gallery-contact h3,
+  .gallery-contact div,
   .gallery-contact p {
     font-size: 1rem;
   }

@@ -35,11 +35,11 @@ const Gallery = ({workImages}) => {
       <section className="gallery-contact-container">
         <div className="gallery-contact">
           <p>If you need any more information about our services or require a quote, please get in touch with us.</p>
-          <h3>
+          <div>
             <span className="material-symbols-outlined email-logo">mail</span>
             <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
-          </h3>
-          <h3>CALL 07917 442218</h3>
+          </div>
+          <a href="tel:+447917442218">CALL 07917 442218</a>
         </div>
       </section>
     </>

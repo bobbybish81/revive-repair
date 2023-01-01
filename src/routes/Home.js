@@ -25,11 +25,13 @@ const Home = ({workImages}) => {
           <p className="intro-text">Revive Repairs specialise in repairing and renovating scratches, dents, cracks, marks and damaged surfaces. Our technicians are fully trained in all aspects of surface repair technology and are CSCS & SSSTS qualified.</p>
           <div>
             <p className="intro-text">Please get in touch for a competitive quote.</p>
-            <h2 className="intro-contact">CALL 07917 442218</h2>
-            <h2 className="intro-contact">
+            <div className="intro-number">
+              <a href="tel:+447917442218">CALL 07917 442218</a>
+            </div>
+            <div className="intro-email">
               <span className="material-symbols-outlined email-logo">mail</span>
               <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
-            </h2>
+            </div>
           </div>
         </article>
       </section>
@@ -39,11 +41,11 @@ const Home = ({workImages}) => {
           <p className="intro-text">Revive Repairs specialise in repairing and renovating scratches, dents, cracks, marks and damaged surfaces. Our technicians are fully trained in all aspects of surface repair technology and are CSCS & SSSTS qualified.</p>
           <div>
             <p className="intro-text">Please get in touch for a competitive quote.</p>
-            <h2 className="intro-contact">CALL 07917 442218</h2>
-            <h2 className="intro-contact">
+            <a className="intro-number" href="tel:+447917442218">CALL 07917 442218</a>
+            <div className="intro-email">
               <span className="material-symbols-outlined email-logo">mail</span>
               <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
-            </h2>
+            </div>
           </div>
         </article>
         <article className="intro-image-article">
@@ -78,10 +80,12 @@ const Home = ({workImages}) => {
         <div className="quote">
           <h1 className="quote-heading">NEED A QUOTE?</h1>
           <p className="quote-text">If you need any more information about our services or require a quote, please get in touch with us.</p>
-          <h2 className="quote-email">
+          <div className="quote-email">
             <a className="mailtoui" href="mailto:info@reviverepairs.com">SEND AN EMAIL</a>
-          </h2>
-          <h2 className="quote-number">CALL 07917 442218</h2>
+          </div>
+          <div className="quote-number">
+            <a href="tel:+447917442218">CALL 07917 442218</a>
+          </div>
         </div>
         </article>
       </section>

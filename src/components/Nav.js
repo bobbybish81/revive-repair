@@ -53,8 +53,13 @@ const Nav = () => {
               <Link to={'/Gallery'}>
                 <li onClick={menuToggle}><span className="material-symbols-outlined link-icon">gallery_thumbnail</span>GALLERY</li>
               </Link>
-              <li className="nav-links-contact"><span className="material-symbols-outlined link-icon">mail</span><a href="mailto:info@reviverepairs.com">info@reviverepairs.com</a></li>
-              <li className="nav-links-contact"><a href="/">CALL 07917 442218</a></li>
+              <li className="nav-links-contact">
+                <span className="material-symbols-outlined link-icon">mail</span>
+                <a href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
+              </li>
+              <li className="nav-links-contact">
+                <a href="tel:+447917442218">CALL 07917 442218</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -63,8 +68,10 @@ const Nav = () => {
       <section className="desktop">
         <div className="nav-contacts">
           <div className="contact-details">
-            <span className="material-symbols-outlined contact-logo">call</span><a className="contact"href="/">07917 442218</a>
-            <span className="material-symbols-outlined contact-logo">mail</span><a className="mailtoui contact" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
+            <span className="material-symbols-outlined contact-logo">call</span>
+            <a className="contact" href="tel:+447917442218">07917 442218</a>
+            <span className="material-symbols-outlined contact-logo">mail</span>
+            <a className="mailtoui contact" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
           </div>
         </div>
         <div className="navbar">

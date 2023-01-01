@@ -103,7 +103,7 @@
   margin-bottom: 1rem;
 }
 
-.services-contact h3 {
+.services-contact div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,7 +174,7 @@
     justify-content: space-around;
   }
 
-  .services-contact h3,
+  .services-contact div,
   .services-contact p {
     margin: 0;
     font-size: 0.85rem;
@@ -184,7 +184,7 @@
 
 @media only screen and (min-width: 1138px) {
 
-  .services-contact h3,
+  .services-contact div,
   .services-contact p {
     font-size: 1rem;
   }
