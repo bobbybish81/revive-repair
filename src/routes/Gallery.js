@@ -39,7 +39,9 @@ const Gallery = ({workImages}) => {
             <span className="material-symbols-outlined email-logo">mail</span>
             <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
           </div>
-          <a href="tel:+447917442218">CALL 07917 442218</a>
+          <div>
+            <a href="tel:+447917442218">CALL 07917 442218</a>
+          </div>
         </div>
       </section>
     </>
