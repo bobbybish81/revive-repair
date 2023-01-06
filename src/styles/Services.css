@@ -1,6 +1,7 @@
 .services-intro {
   background-image: url('.././images/mobile_bathroom_services.png');
   width: 100%;
+  animation: fadein 1s;
 }
 
 .services-intro-container {
@@ -132,6 +133,7 @@
   .services-intro {
     background-image: url('.././images/desktop_bathroom.png');
     background-size: cover;
+    animation: fadein 1s;
   }
 
   .services-intro-container {
@@ -194,4 +196,9 @@
   .services-detail h3 {
     font-size: 1.1rem;
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

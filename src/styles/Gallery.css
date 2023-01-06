@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   letter-spacing: 0.075rem;
+  animation: fadein 1s;
 }
 
 .gallery-heading {
@@ -22,11 +23,15 @@
   font-size: 0.9rem;
 }
 
-.gallery-container {
-  color: #104ca0;
+.gallery {
   border-top: 0.5px solid #f47323;
   border-bottom: 1px solid #cecd1a;
   background-color: #f8f6f6;
+  animation: fadein 1s;
+}
+
+.gallery-container {
+  color: #104ca0;
 }
 
 .image-container {
@@ -137,7 +142,9 @@
   .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
     padding: 1rem 0;
+    max-width: 1400px;
   }
 
   .image-container {
@@ -204,4 +211,9 @@
   .gallery-contact p {
     font-size: 1rem;
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

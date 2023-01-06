@@ -11,6 +11,7 @@
   border-bottom: 1px solid #cecdcd;
   background-image: url('.././images/mobile_bathroom_intro.png');
   background-size: cover;
+  animation: fadein 1s;
 }
 
 .intro {
@@ -127,6 +128,7 @@
     border-bottom: 1px solid #cecdcd;
     background-image: url('.././images/desktop_bathroom.png');
     background-size: cover;
+    animation: fadein 1s;
   }
 
   .home-intro-container {
@@ -298,8 +300,6 @@
 
 }
 
-
-
 @media only screen and (min-width: 1138px) {
 
   .home-intro-desktop {
@@ -319,7 +319,6 @@
   .intro-image {
     width: 17rem;
     height: 17rem;
-    transition: all 0.9s ease;
   }
 
   .intro-image-text {
@@ -333,4 +332,9 @@
   .home-services-text {
     font-size: 1.15rem;
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
