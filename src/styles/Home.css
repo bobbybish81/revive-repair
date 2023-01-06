@@ -10,6 +10,8 @@
   text-align: center;
   border-bottom: 1px solid #cecdcd;
   background-blend-mode: overlay;
+  -moz-background-color: rgba(36, 35, 62, 0.4);
+  -webkit-background-color: rgba(36, 35, 62, 0.4);
   background-color: rgba(36, 35, 62, 0.4);
   background-image: url('.././images/mobile_bathroom.avif');
   background-size: cover;
