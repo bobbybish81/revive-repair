@@ -36,7 +36,7 @@ const Services = () => {
         <div className="services-intro-container">
           <article className="services">
             <h2>OUR SERVICE</h2>
-            <p className="services-text">We are a fast, professional and fully accredited work safe contractor who save our customers time and money by <b style={{fontWeight: '700'}}>NOT</b> replacing but repairing damaged items on site.</p>
+            <p className="services-text">We are a fast, professional and fully accredited work safe contractor who save our customers time and money by <b style={{color: '#f47323'}}>NOT</b> replacing but repairing damaged items on site.</p>
             <p className="services-text">Scratches, dents, cracks, stains, scuff marks or even just fatigued surfaces can be revived to look as good as new by our fully trained technicians.</p>
           </article>
           <article className="services">
