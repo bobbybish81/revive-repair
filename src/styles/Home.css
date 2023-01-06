@@ -13,16 +13,10 @@
   background-size: cover;
 }
 
-.home-services-container {
-  border-bottom: 4px solid #f47323;
-  width: 80%;
-  margin: 0 auto 2rem;
-  display: flex;
-}
-
 .intro {
   display: grid;
   height: 100%;
+  width: 80%;
   margin: 0 auto;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -56,7 +50,7 @@
   color: #fff;
   font-size: 1rem;
   background-color: #f47323;
-  max-width: 20rem;
+  max-width: 320px;
   padding: 0.75rem;
   margin: 1rem auto;
   border-radius: 100px;
@@ -81,6 +75,13 @@
 .intro-email a:focus,
 .intro-number a:focus {
   color: #fff;
+}
+
+.home-services-container {
+  border-bottom: 4px solid #f47323;
+  width: 80%;
+  margin: 0 auto 2rem;
+  display: flex;
 }
 
 .home-services {
@@ -122,15 +123,20 @@
   }
 
   .home-intro-desktop {
+    display: block;
+    border-bottom: 1px solid #cecdcd;
+    background-image: url('.././images/desktop_bathroom.png');
+    background-size: cover;
+  }
+
+  .home-intro-container {
     display: flex;
     height: 35rem;
     margin: 0 auto;
     font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
-    border-bottom: 1px solid #cecdcd;
-    background-image: url('.././images/desktop_bathroom.png');
-    background-size: cover;
+    max-width: 1400px;
   }
 
   .intro-heading {
@@ -202,6 +208,10 @@
     position: absolute;
     top: -1rem;
     left: -2.5rem;
+  }
+
+  .home-services-container {
+    max-width: 1148px;
   }
 
   .home-services {

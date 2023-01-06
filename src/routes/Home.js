@@ -37,39 +37,41 @@ const Home = ({workImages}) => {
         </article>
       </section>
       <section className="home-intro-desktop">
-        <article className="intro">
-          <h1 className="intro-heading">WE REVIVE SURFACES</h1>
-          <p className="intro-text">Revive Repairs specialise in repairing and renovating scratches, dents, cracks, marks and damaged surfaces. Our technicians are fully trained in all aspects of surface repair technology and are CSCS & SSSTS qualified.</p>
-          <div>
-            <p className="intro-text">Please get in touch for a competitive quote.</p>
-            <a className="intro-number" href="tel:+447917442218">CALL 07917 442218</a>
-            <div className="intro-email">
-              <span className="material-symbols-outlined email-logo">mail</span>
-              <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
+        <div className="home-intro-container">
+          <article className="intro">
+            <h1 className="intro-heading">WE REVIVE SURFACES</h1>
+            <p className="intro-text">Revive Repairs specialise in repairing and renovating scratches, dents, cracks, marks and damaged surfaces. Our technicians are fully trained in all aspects of surface repair technology and are CSCS & SSSTS qualified.</p>
+            <div>
+              <p className="intro-text">Please get in touch for a competitive quote.</p>
+              <a className="intro-number" href="tel:+447917442218">CALL 07917 442218</a>
+              <div className="intro-email">
+                <span className="material-symbols-outlined email-logo">mail</span>
+                <a className="mailtoui" href="mailto:info@reviverepairs.com">info@reviverepairs.com</a>
+              </div>
+              <p className="intro-top-tip">Top Tip - Please attach some pictures of the damaged area along with your contact details and post code. This is so we can assess and help you more quickly and efficiently</p>
             </div>
-            <p className="intro-top-tip">Top Tip - Please attach some pictures of the damaged area along with your contact details and post code. This is so we can assess and help you more quickly and efficiently</p>
-          </div>
-        </article>
-        <article className="intro-image-article">
-          <div className="intro-image-container">
-            <img
+          </article>
+          <article className="intro-image-article">
+            <div className="intro-image-container">
+              <img
+                  className="intro-image"
+                  src={require( `../images/before_images/${workImages[index]}`)}
+                  alt="Before_Image"
+                  />
+              <p className="intro-image-text">BEFORE</p>
+            </div>
+          </article>
+          <article className="intro-image-article">
+            <div className="intro-image-container">
+              <img
                 className="intro-image"
-                src={require( `../images/before_images/${workImages[index]}`)}
-                alt="Before_Image"
+                src={require( `../images/after_images/${workImages[index]}`)}
+                alt="After_Image"
                 />
-            <p className="intro-image-text">BEFORE</p>
-          </div>
-        </article>
-        <article className="intro-image-article">
-          <div className="intro-image-container">
-            <img
-              className="intro-image"
-              src={require( `../images/after_images/${workImages[index]}`)}
-              alt="After_Image"
-              />
-            <p className="intro-image-text">AFTER</p>
-          </div>
-        </article>
+              <p className="intro-image-text">AFTER</p>
+            </div>
+          </article>
+        </div>
       </section>
       <section className="home-services-container">
         <article className="home-services">
