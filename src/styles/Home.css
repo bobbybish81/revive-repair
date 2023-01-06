@@ -22,7 +22,6 @@
 
 .intro {
   display: grid;
-  width: 20rem;
   height: 100%;
   margin: 0 auto;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -130,8 +129,6 @@
     font-weight: 500;
     text-align: center;
     border-bottom: 1px solid #cecdcd;
-    /* background-blend-mode: overlay;
-    background-color: rgba(93, 92, 89, 0.4); */
     background-image: url('.././images/desktop_bathroom.png');
     background-size: cover;
   }
