@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 import '.././styles/Nav.css';
 
-const Nav = () => {
-
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const menuToggle = () => {
-    openMenu === true ? setOpenMenu(false) : setOpenMenu(true);
-  }
+const Nav = ({openMenu, menuToggle}) => {
 
   const menuStyles = {
     Active: {

@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Gallery from './routes/Gallery';
@@ -11,6 +11,12 @@ import Footer from './components/Footer';
 import './styles/App.css';
 
 const App = () => {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const menuToggle = () => {
+    openMenu === true ? setOpenMenu(false) : setOpenMenu(true);
+  }
 
   const workImages = [
     'baths.jpeg',
@@ -30,7 +36,10 @@ const App = () => {
   return (
     <>
     <header className="header">
-      <Nav/>
+      <Nav 
+      openMenu={openMenu}
+      setOpenMenu={setOpenMenu}
+      menuToggle={menuToggle}/>
     </header>
     <main className="main-container">
       <Routes>
@@ -42,7 +51,9 @@ const App = () => {
       </Routes>
     </main>
     <footer className="footer">
-      <Footer/>
+    <Footer 
+      openMenu={openMenu}
+      setOpenMenu={setOpenMenu}/>
     </footer>
     </>
   );
