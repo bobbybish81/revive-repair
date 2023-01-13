@@ -18,7 +18,7 @@ useLayoutEffect(() => {
       <p>These Terms and Conditions shall be incorporated into the Contract and shall apply in place of and prevail over any terms and conditions contained or referred to in any communication from the customer or implied by custom or practice. Other purported terms and conditions are expressly rejected by the company.</p>
 
       <h6 className="TandC-heading">1. Interpretation</h6>
-      <p>'Customer' means the person who accepts a quotation of Revive Ltd for the sale of Goods, and whose order fort the Goods is accepted by Revive Ltd.</p>
+      <p>'Customer' means the person who accepts a quotation of Revive Ltd for the sale of Goods, and whose order for the Goods is accepted by Revive Ltd.</p>
       <p>'Conditions' mean the Standard Terms and Conditions of sale set out here and (unless the context otherwise requires) includes any special terms and conditions agreed in writing between the Customer and Revive Ltd.</p>
       <p>'Contract' means the Contract for the purchase and sale of Goods.</p>
       <p>'Goods' means the goods or services (including any instalment of goods or services or parts for them) which Revive Ltd is to supply in accordance with these conditions.</p>

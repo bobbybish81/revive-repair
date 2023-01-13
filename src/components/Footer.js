@@ -22,7 +22,13 @@ const Footer = ({openMenu, setOpenMenu}) => {
       <p className="footer-text">Revive Repair Ltd • Company number 9868638 • VAT number 233216836 • UTR number 2055420540 </p>
       <p>Click here to read our <Link to={'/Terms_and_Conditions'} style={ {color: 'inherit'} } >
         <b onClick={() => setOpenMenu(false)}>Terms & Conditions</b></Link></p>
-      <p>Website developed by <a href="https://robertbishwebdeveloper.com"><b>Robert Bish</b></a></p>
+      <p>Website developed by 
+        <Link
+          href='https://robertbishwebdeveloper.com'
+          target="_blank"
+          rel="noreferrer">
+          <b>Robert Bish</b>
+        </Link></p>
     </div>
 
     </>
