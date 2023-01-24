@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import '.././styles/Home.css'
 
 const Home = ({workImages}) => {
 
   const [index, setIndex] = useState(0);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0,0)
+  })
 
   useEffect(() => {
     const intervalId = setInterval(() => {

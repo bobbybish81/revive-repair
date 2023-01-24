@@ -1,7 +1,12 @@
-import React from 'react';
+import { useLayoutEffect } from 'react';
 import '.././styles/Gallery.css';
 
 const Gallery = ({workImages}) => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0,0)
+  })
+
   return (
     <>
       <section className="heading-container">

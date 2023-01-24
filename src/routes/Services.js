@@ -1,7 +1,11 @@
-import React from 'react';
+import { useLayoutEffect } from 'react';
 import '.././styles/Services.css'
 
 const Services = () => {
+
+  useLayoutEffect(() => {
+    window.scrollTo(0,0)
+  })
 
   const services = [
         'BASINS',
