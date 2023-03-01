@@ -1,0 +1,64 @@
+.contact-container {
+  display: flex;
+  border-bottom: 1px solid #cecdcd;
+}
+
+.contact-article {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #104ca0;
+  padding: 1rem;
+}
+
+.contact-article p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-article div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.contact-article a {
+  color: #fff;
+}
+
+.contact-article a:hover {
+  cursor: pointer;
+  color:#e1e1e2;
+}
+
+.email-logo {
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+@media only screen and (min-width: 980px) {
+
+  .contact {
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact-article div,
+  .contact-article p {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (min-width: 1138px) {
+
+  .contact-article div,
+  .contact-article p {
+    font-size: 1rem;
+  }
+}
