@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import { MdOutlineCheckCircleOutline } from 'react-icons/md';
 import Contact from '../components/Contact';
 import '.././styles/Services.css'
@@ -70,7 +70,7 @@ const Services = () => {
           </article>
           <article className='services'>
             <h2>OUR OFFER</h2>
-            <p className='services-text'>Revive Ltd have the skills and experience to restore, repair and renew virtually any hard surface both internally and externally with over 16 years’ experience within this industry.</p>
+            <p className='services-text'>Revive Ltd have the skills and experience to restore, repair and renew virtually any hard surface both internally and externally with over 16 years&apos; experience within this industry.</p>
             <p className='services-text'>We pride ourselves on the quality of our work. We are confident that we can offer very competitive rates compared to much larger competitors with higher overheads where quantity may compromise on quality!</p>
           </article>
         </div>

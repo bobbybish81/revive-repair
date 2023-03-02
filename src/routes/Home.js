@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
 import '.././styles/Home.css'
 
@@ -98,7 +98,7 @@ const Home = ({ images }) => {
         <article className='repairs-container'>
           <h2 className='repair-heading'>WHAT WE CAN REVIVE</h2>
           <p className='repairs-text'>BASINS | BATHS | BRICKS | CLADDING & PANELLING | CONSERVATORIES | COUNTER-TOPS | DOORS | FURNITURE | FLOORS | FORMICA | GRP | HIGH GLOSS | IPS | KITCHEN UNITS</p>
-          <p className='repairs-text'>KITCHEN DOORS | LAMINATES AND VENEERS | MARBLE | POWDER-COATED SURFACES | SHOWER TRAYS | STONE | STAINLESS STEEL | TILES | WINDOW FRAMES | uPVC</p>
+          <p className='repairs-text'>KITCHEN DOORS | LAMINATES AND VENEERS | MARBLE | POWDER-COATED SURFACES | SHOWER TRAYS | STONE | STAINLESS STEEL | TILES | WINDOW FRAMES | uPVC</p>
         </article>
       </section>
     </>

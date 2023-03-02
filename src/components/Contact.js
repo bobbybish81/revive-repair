@@ -1,3 +1,4 @@
+import React from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
 import '.././styles/Contact.css';
 

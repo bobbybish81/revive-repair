@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import Contact from '../components/Contact';
 import '.././styles/Gallery.css';
 
@@ -11,7 +11,7 @@ const Gallery = ({ images }) => {
   return (
     <>
       <section className="heading-container">
-        <h1 className="gallery-heading">DON'T REPLACE.... REPAIR!</h1>
+        <h1 className="gallery-heading">DON&apos;T REPLACE.... REPAIR!</h1>
         <h2 className="gallery-subheading">SOME EXAMPLES OF OUR WORK</h2>
       </section>
       <section className="gallery">

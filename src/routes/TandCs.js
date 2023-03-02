@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import '.././styles/TandCs.css'
 
 const TandCs = () => {
@@ -18,19 +18,19 @@ useLayoutEffect(() => {
       <p>These Terms and Conditions shall be incorporated into the Contract and shall apply in place of and prevail over any terms and conditions contained or referred to in any communication from the customer or implied by custom or practice. Other purported terms and conditions are expressly rejected by the company.</p>
 
       <h6 className='TandC-heading'>1. Interpretation</h6>
-      <p>'Customer' means the person who accepts a quotation of Revive Ltd for the sale of Goods, and whose order for the Goods is accepted by Revive Ltd.</p>
-      <p>'Conditions' mean the Standard Terms and Conditions of sale set out here and (unless the context otherwise requires) includes any special terms and conditions agreed in writing between the Customer and Revive Ltd.</p>
-      <p>'Contract' means the Contract for the purchase and sale of Goods.</p>
-      <p>'Goods' means the goods or services (including any instalment of goods or services or parts for them) which Revive Ltd is to supply in accordance with these conditions.</p>
-      <p>'Revive Ltd' means Revive Limited.</p>
-      <p>'Writing' includes email, facsimile transmission and other comparable forms of communications.</p>
+      <p>&apos;Customer&apos; means the person who accepts a quotation of Revive Ltd for the sale of Goods, and whose order for the Goods is accepted by Revive Ltd.</p>
+      <p>&apos;Conditions&apos; mean the Standard Terms and Conditions of sale set out here and (unless the context otherwise requires) includes any special terms and conditions agreed in writing between the Customer and Revive Ltd.</p>
+      <p>&apos;Contract&apos; means the Contract for the purchase and sale of Goods.</p>
+      <p>&apos;Goods&apos; means the goods or services (including any instalment of goods or services or parts for them) which Revive Ltd is to supply in accordance with these conditions.</p>
+      <p>&apos;Revive Ltd&apos; means Revive Limited.</p>
+      <p>&apos;Writing&apos; includes email, facsimile transmission and other comparable forms of communications.</p>
 
       <h6 className='TandC-heading'>2. Basics of Sale</h6>
       <p><strong>2.1</strong> The Goods shall be bought and sold in accordance with any written quotation of Revive Ltd which is accepted by the Customer and/or written Order by the customer which is accepted by Revive Ltd, subject to these conditions which shall govern the contract to the exclusion of any other terms and conditions subject to which any such quotation or order is accepted, or purported to be accepted. No variation to these Conditions shall be binding unless agreed in writing between the authorised representatives of both the Customer and Revive Ltd.</p>
       <p><strong>2.2</strong> Any typographical, clerical or other error or omission in any sales literature, quotation, price list, acceptance of offer, invoice or other document or information issued by Revive Ltd shall be subject to correction without any liability on the part of Revive Ltd.</p>
       
       <h6 className='TandC-heading'>3. Prices</h6>
-      <p><b>3.1</b> The acceptance of Order shall not preclude any consequent increase in price due to the Customer negotiating an alteration to specification of quantity after the order has been accepted, with the exception of an 'Approved variation from contract order' in line with 2.1 and 2.2 of the terms and conditions.</p>
+      <p><b>3.1</b> The acceptance of Order shall not preclude any consequent increase in price due to the Customer negotiating an alteration to specification of quantity after the order has been accepted, with the exception of an &apos;Approved variation from contract order&apos; in line with 2.1 and 2.2 of the terms and conditions.</p>
       <p><b>3.2</b> Revive Ltd reserves the right, by giving notice to the Customer at any time before delivery/start, to increase the price of the Goods to reflect any increase in the costs to Revive Ltd which is due to any factor beyond the control of Revive Ltd.</p>
       <p><b>3.3</b> The price is exclusive of any applicable Value Added (or similar) Tax, which the customer shall be additionally liable to pay Revive Ltd., in line with the government legislation.</p>
       <p><b>3.4</b> All prices quoted are Ex Goods unless otherwise stated and carriage will be charged extra. Revive Ltd shall in addition be entitled to make a surcharge for any (e.g. Same day, Couriers, Overnight, Weekends etc).</p>

@@ -1,3 +1,8 @@
+.header {
+  width: 100%;
+  z-index: 99;
+}
+
 .navbar {
   width: 100%;
   height: 5rem;
@@ -90,6 +95,11 @@ ul .nav-links-contact:nth-of-type(1) {
 }
 
 @media only screen and (min-width: 980px) {
+
+  .header {
+    position: sticky;
+    top: 0;
+    }
 
   .desktop {
     display: block;
