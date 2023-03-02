@@ -32,7 +32,7 @@
 
 .contact-article a:hover {
   cursor: pointer;
-  color:#e1e1e2;
+  color: #e1e1e2;
 }
 
 .email-logo {
@@ -42,7 +42,7 @@
 
 @media only screen and (min-width: 980px) {
 
-  .contact {
+  .contact-article {
     height: 3rem;
     display: flex;
     justify-content: space-around;

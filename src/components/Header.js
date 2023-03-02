@@ -65,9 +65,9 @@ const Header = ({ openMenu, menuToggle }) => {
           <div className='nav-contacts'>
             <div className='contact-details'>
               <FiPhone className='contact-logo'/>
-              <a className='contact' href='tel:+447917442218'>07917 442218</a>
+              <a className='nav-contact' href='tel:+447917442218'>07917 442218</a>
               <MdOutlineEmail className='contact-logo'/>
-              <a className='contact' href='mailto:info@reviverepairs.com'>info@reviverepairs.com</a>
+              <a className='nav-contact' href='mailto:info@reviverepairs.com'>info@reviverepairs.com</a>
             </div>
           </div>
           <div className='navbar'>

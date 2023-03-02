@@ -121,6 +121,7 @@ ul .nav-links-contact:nth-of-type(1) {
     height: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 2rem;
   }
 
@@ -129,7 +130,7 @@ ul .nav-links-contact:nth-of-type(1) {
     cursor: pointer;
   }
 
-  .contact {
+  .nav-contact {
     margin: 0 1rem 0 0.1rem;
     color: #fff;
     font-size: 0.8rem;
@@ -138,7 +139,7 @@ ul .nav-links-contact:nth-of-type(1) {
     letter-spacing: 0.75px;
   }
 
-  .contact:hover {
+  .nav-contact:hover {
     color:#e9e9ee;
     cursor: pointer;
   }
