@@ -19,6 +19,7 @@ const App = () => {
     'baths.jpeg',
     'brick_tinting.jpeg',
     'composite_doors.jpeg',
+    'window_frames.webp',
     'foil_wrapped_upvc.jpeg',
     'garage_door_respray.jpeg',
     'grp.jpeg',
@@ -26,7 +27,6 @@ const App = () => {
     'tiles.jpeg',
     'upvc_colour_change.jpeg',
     'white_upvc.jpeg',
-    'window_frames.webp',
     'wood_veneer.jpeg',
   ];
 
