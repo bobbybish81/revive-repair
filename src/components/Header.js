@@ -49,7 +49,7 @@ const Header = ({ openMenu, menuToggle }) => {
                 <Link to={'/gallery'}>
                   <li onClick={menuToggle}><AiOutlinePicture className='link-icon'/>GALLERY</li>
                 </Link>
-                <li className='navlinks-contact'>
+                <li className='nav-links-contact'>
                   <MdOutlineEmail className='link-icon'/>
                   <a href='mailto:info@reviverepairs.com'>info@reviverepairs.com</a>
                 </li>

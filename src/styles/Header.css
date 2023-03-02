@@ -26,12 +26,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.menu-icon {
-  color: #104ca0;
+  font-weight: 700;
   font-size: 1.75rem;
-  font-weight: 600;
+  color: #104ca0;
 }
 
 .menu-container {
