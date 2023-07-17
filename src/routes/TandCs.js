@@ -73,10 +73,10 @@ useLayoutEffect(() => {
       <p><b>8.12</b> If the Customer does not have a member of staff available to sign off work sheets on site this will be construed as acceptance of work complete and satisfactory.</p>
       <p><b>8.13</b> Force Majeure- in the event of any Force Majeure the company will in no way be liable for any loss or damage incurred.</p>
 
-      <h6 className='TandC-heading'>9.00 Insolvency</h6>
+      <h6 className='TandC-heading'>9 Insolvency</h6>
       <p><b>9.1</b> If the Customer ceases to pay his debts in the ordinary course of business, is unable or deemed unable to pay his debts, has an administration order, becomes bankrupt or goes into liquidation, an ecumbrancer takes possession, or a receiver is appointed over part or all of his assets, if the Customers ceases or threatens to cease to carry on business, or if Revive Ltd reasonable apprehends any of these events might occur, then, without prejudice to any other right or remedy, Revive Ltd shall be entitled to cancel the Contract. The Customer shall become immediately liable for all the costs incurred by Revive Ltd prior to cancellation, whether or not the Goods are completed, and if the Goods have been completed but not paid for, the price shall become immediately due and payable, notwithstanding any previous agreement in contrary.</p>
 
-      <h6 className='TandC-heading'>10.00 General</h6>
+      <h6 className='TandC-heading'>10 General</h6>
       <p><b>10.1</b> No waiver by Revive Ltd of any breach of the Contract by the Customer shall be considered as a waiver of a subsequent breach of the same of any other provision.</p>
       <p><b>10.2</b> If any provision of these Conditions is held by any competent authority to be invalid or unenforceable in whole or in part, the validity of the other provisions of these Conditions and the remainder of the provision in question shall not be affected thereby.</p>
     </section>

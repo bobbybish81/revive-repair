@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Gallery from './routes/Gallery';
@@ -9,27 +9,18 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 const App = () => {
+  
   const [openMenu, setOpenMenu] = useState(false);
 
   const menuToggle = () => {
     openMenu === true ? setOpenMenu(false) : setOpenMenu(true);
   };
 
-  const images = [
-    'baths.jpeg',
-    'brick_tinting.jpeg',
-    'composite_doors.jpeg',
-    'fireplace_tiles.jpeg',
-    'foil_wrapped_upvc.jpeg',
-    'garage_door_respray.jpeg',
-    'grp.jpeg',
-    'stone_restoration.jpeg',
-    'tiles.jpeg',
-    'upvc_colour_change.jpeg',
-    'window_frames.webp',
-    'white_upvc.jpeg',
-    'wood_veneer.jpeg',
-  ];
+  const images = [];
+  const req = require.context('./assets/afterImages', false, /\.jpeg$/);
+    req.keys().forEach((filename) => {
+      images.push(filename.substr(2));
+  });
 
   return (
     <>

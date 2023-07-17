@@ -1,22 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { MdOutlineEmail } from 'react-icons/md';
+import IntroImage from '../components/IntroImage';
 import '.././styles/Home.css'
 
 const Home = ({ images }) => {
-
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-        if (index === images.length - 1) {
-            setIndex(0);
-        } 
-        else {
-            setIndex(index + 1);
-        }
-    }, 6000)
-    return () => clearInterval(intervalId);
-  }, [index, images.length])
 
   return (
     <>
@@ -53,22 +40,18 @@ const Home = ({ images }) => {
             </div>
           </article>
           <article className='intro-image-article'>
-            <div className='intro-image-container'>
-              <img
-                  className='intro-image'
-                  src={require( `../assets/beforeImages/${images[index]}`)}
-                  alt='BeforeImage'
-                  />
+            <div className='before-image-container'>
+              <IntroImage
+                images={images}
+                folder={'beforeImages'}/>
               <p className='intro-image-text'>BEFORE</p>
             </div>
           </article>
           <article className='intro-image-article'>
-            <div className='intro-image-container'>
-              <img
-                className='intro-image'
-                src={require( `../assets/afterImages/${images[index]}`)}
-                alt='AfterImage'
-                />
+            <div className='after-image-container'>
+              <IntroImage
+                  images={images}
+                  folder={'afterImages'}/>
               <p className='intro-image-text'>AFTER</p>
             </div>
           </article>
