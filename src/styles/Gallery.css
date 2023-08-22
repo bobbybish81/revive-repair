@@ -1,5 +1,6 @@
 .heading-container {
-  background-image: url('../assets/backgroundImages/surface.webp');
+  background-image: url('../assets/backgroundImages/gallery_bg.webp');
+  background-size: cover;
   padding: 2rem 0;
   display: flex;
   flex-direction: column;

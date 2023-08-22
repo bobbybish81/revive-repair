@@ -1,0 +1,2 @@
+# Sitemaps
+Sitemap: https://reviverepairs.com/sitemap.xml

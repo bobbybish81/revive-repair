@@ -1,5 +1,6 @@
 .services-intro {
-  background-image: url('../assets/backgroundImages/mobile_bathroom_services.webp');
+  background-image: url('../assets/backgroundImages/mobile_bathroom_services_bg.webp');
+  background-size: cover;
   width: 100%;
   animation: fadein 1s;
 }
@@ -88,7 +89,7 @@
 @media only screen and (min-width: 980px) {
 
   .services-intro {
-    background-image: url('../assets/backgroundImages/desktop_bathroom.webp');
+    background-image: url('../assets/backgroundImages/desktop_bathroom_bg.webp');
     background-size: cover;
     animation: fadein 1s;
   }
