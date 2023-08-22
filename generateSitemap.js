@@ -38,3 +38,4 @@ const generateSitemap = () => {
   fs.writeFileSync(sitemapPath, sitemap.end({ pretty: true }));
 };
 
+generateSitemap();
