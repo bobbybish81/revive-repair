@@ -1,2 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://akysec.com
+
 # Sitemaps
-Sitemap: https://reviverepairs.com/sitemap.xml
+Sitemap: https://akysec.com/sitemap.xml
