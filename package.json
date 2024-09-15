@@ -16,7 +16,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "@adobe/css-tools": "^4.3.2",
-    "postcss": "^8.4.31"
+    "postcss": ">=8.4.31"
   },
   "scripts": {
     "start": "react-scripts start",
